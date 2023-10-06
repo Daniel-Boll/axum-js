@@ -1,0 +1,20 @@
+{
+  "name": "@lambda-group/axum-js-win32-x64-msvc",
+  "version": "0.0.0",
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "axum-js.win32-x64-msvc.node",
+  "files": [
+    "axum-js.win32-x64-msvc.node"
+  ],
+  "description": "A Axum http wrapper for NodeJS",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "repository": "daniel-boll/axum-js"
+}

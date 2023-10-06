@@ -1,0 +1,23 @@
+{
+  "name": "@lambda-group/axum-js-linux-x64-gnu",
+  "version": "0.0.0",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "axum-js.linux-x64-gnu.node",
+  "files": [
+    "axum-js.linux-x64-gnu.node"
+  ],
+  "description": "A Axum http wrapper for NodeJS",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "repository": "daniel-boll/axum-js",
+  "libc": [
+    "glibc"
+  ]
+}
