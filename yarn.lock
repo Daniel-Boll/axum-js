@@ -19,9 +19,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lambda/axum-js@workspace:.":
+"@lambda-group/axum-js@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@lambda/axum-js@workspace:."
+  resolution: "@lambda-group/axum-js@workspace:."
   dependencies:
     "@napi-rs/cli": ^2.16.3
     ava: ^5.1.1
