@@ -27,7 +27,7 @@
     "universal": "napi universal",
     "version": "napi version"
   },
-  "packageManager": "yarn@4.0.0-rc.53",
+  "packageManager": "yarn@3.6.4",
   "repository": "https://github.com/daniel-boll/axum-js",
   "description": "A Axum http wrapper for NodeJS"
 }
