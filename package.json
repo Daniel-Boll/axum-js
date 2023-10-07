@@ -10,7 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "@napi-rs/cli": "^2.16.3",
-    "ava": "^5.1.1"
+    "ava": "^5.1.1",
+    "tsx": "^3.13.0"
   },
   "ava": {
     "timeout": "3m"
@@ -18,14 +19,15 @@
   "engines": {
     "node": ">= 10"
   },
+  "artifacts": "napi artifacts",
   "scripts": {
-    "artifacts": "napi artifacts",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
     "test": "ava",
     "universal": "napi universal",
-    "version": "napi version"
+    "version": "napi version",
+    "test:custom": "tsx base.ts"
   },
   "packageManager": "yarn@3.6.4",
   "repository": "https://github.com/daniel-boll/axum-js",
