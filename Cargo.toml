@@ -7,12 +7,15 @@ version = "0.0.0"
 crate-type = ["cdylib"]
 
 [dependencies]
+axum = { version = "0.6.20", features = [] }
 # Default enable napi4 feature, see https://nodejs.org/api/n-api.html#node-api-version-matrix
 napi = { version = "2.13.3", default-features = false, features = ["napi8"] }
 napi-derive = "2.13.0"
 
 [build-dependencies]
 napi-build = "2.0.1"
+toml = "0.8"
+serde = { version = "1.0", features = ["derive"] }
 
 [profile.release]
 lto = true
