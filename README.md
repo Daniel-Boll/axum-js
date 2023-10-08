@@ -1,11 +1,26 @@
-<h1 align="center">@lambda-group/axum-js</h1>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://socialify.git.ci/daniel-boll/axum-js/image?description=1&descriptionEditable=%F0%9F%9A%80%20A%20Axum%20http%20wrapper%20for%20NodeJS%20built%20in%20Rust%20%F0%9F%A6%80&font=Inter&issues=1&language=1&name=1&owner=1&pattern=Solid&stargazers=1&theme=Dark">
+    <img src="https://socialify.git.ci/daniel-boll/axum-js/image?description=1&descriptionEditable=%F0%9F%9A%80%20A%20Axum%20http%20wrapper%20for%20NodeJS%20built%20in%20Rust%20%F0%9F%A6%80&font=Inter&issues=1&language=1&name=1&owner=1&pattern=Solid&stargazers=1&theme=Dark" alt="axum-js" />
+  </picture>
+  <br/>
+  <br/>
+  
+![Tests Status][badge-tests]
+![Deploy Status][badge-deploy]
+
+</div>
+
+[badge-tests]:https://img.shields.io/github/actions/workflow/status/daniel-boll/axum-js/test.yml?branch=main&label=tests&logo=github&style=for-the-badge
+[badge-deploy]:https://img.shields.io/github/actions/workflow/status/daniel-boll/axum-js/publish.yml?branch=main&label=deploy&logo=github&style=for-the-badge
+
 
 <div align="center">
 
 [![NPM version](https://img.shields.io/npm/v/@lambda-group/axum-js.svg?style=flat-square)](https://www.npmjs.com/package/@lambda-group/axum-js)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
-[![Twitter Follow](https://img.shields.io/twitter/follow/lambda_group?style=social)](https://twitter.com/lambda_group)
+[![Twitter Follow](https://img.shields.io/twitter/follow/db_regret?style=social)](https://x.com/db_regret)
 
 </div>
 
