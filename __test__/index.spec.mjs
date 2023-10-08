@@ -1,7 +1,7 @@
-import test from 'ava'
+import test from "ava";
 
-import { sum } from '../index.js'
+import { axumVersion } from "../index.js";
 
-test('sum from native', (t) => {
-  t.is(sum(1, 2), 3)
-})
+test("fetch axum version", (t) => {
+  t.is(axumVersion(), "0.6.20");
+});

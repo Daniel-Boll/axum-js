@@ -252,6 +252,7 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { sum } = nativeBinding
+const { AxumApp, axumVersion } = nativeBinding
 
-module.exports.sum = sum
+module.exports.AxumApp = AxumApp
+module.exports.axumVersion = axumVersion
