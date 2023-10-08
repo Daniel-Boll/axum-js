@@ -1,7 +1,11 @@
 use std::{net::SocketAddr, sync::Arc};
 
 use axum::{routing::get, Router};
+use hyper::{Body, Request};
+use napi::threadsafe_function::{ErrorStrategy, ThreadsafeFunction};
 use tokio::sync::Mutex;
+
+use super::{request::AxumRequest, response::AxumResponse};
 
 type SharedRouter = Arc<Mutex<Router>>;
 
@@ -18,8 +22,26 @@ impl AxumApp {
   }
 
   #[napi]
-  pub fn get(&mut self, path: String) {
-    let app = Router::new().route(&path, get(|| async { "Hello World!" }));
+  pub fn get(
+    &mut self,
+    path: String,
+    // TODO: Probably use Either<> to have a single callback for both sync and async
+    #[napi(ts_arg_type = "(request: AxumRequest, response: AxumResponse) => void")]
+    cb: ThreadsafeFunction<(AxumRequest, AxumResponse), ErrorStrategy::Fatal>,
+  ) {
+    let app = Router::new().route(
+      &path,
+      get(|request: Request<Body>| async move {
+        let request = AxumRequest::new(request).await;
+        let response = AxumResponse::new();
+
+        cb.call_async::<()>((request, response.clone()))
+          .await
+          .unwrap();
+
+        response.produce_response()
+      }),
+    );
 
     self.routes.push(Arc::new(Mutex::new(app)));
   }

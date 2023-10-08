@@ -6,6 +6,16 @@
 export function axumVersion(): string
 export class AxumApp {
   constructor()
-  get(path: string): void
+  get(path: string, cb: (request: AxumRequest, response: AxumResponse) => void): void
   listen(port: number): Promise<void>
+}
+export class AxumRequest {
+  body(): Record<string, any>
+}
+export class AxumResponseInternal { }
+export class AxumResponse {
+  sendJson(body: any): this
+  sendText(body: string): this
+  status(status: number): this
+  setHeader(key: string, value: string): this
 }

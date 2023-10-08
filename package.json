@@ -27,7 +27,7 @@
     "test": "ava",
     "universal": "napi universal",
     "version": "napi version",
-    "test:custom": "tsx base.ts"
+    "test:custom": "tsx --watch base.ts"
   },
   "packageManager": "yarn@3.6.4",
   "repository": "https://github.com/daniel-boll/axum-js",
