@@ -45,6 +45,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
   build:
+    if: needs.check-version-in-commit.outputs.should_publish == 'true'
+    needs: [check-version-in-commit]
     strategy:
       fail-fast: false
       matrix:

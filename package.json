@@ -32,7 +32,7 @@
   "packageManager": "yarn@3.6.4",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Daniel-Boll/axum-js.git"
+    "url": "https://github.com/daniel-boll/axum-js"
   },
   "bugs": {
     "url": "https://github.com/daniel-boll/axum-js/issues"
