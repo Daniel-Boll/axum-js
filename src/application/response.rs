@@ -41,6 +41,14 @@ impl AxumResponseInternal {
     self.body = Some(body);
   }
 
+  pub fn send_text(&mut self, body: String) {
+    self
+      .set_header("Content-Type".to_string(), "text/plain".to_string())
+      .unwrap();
+
+    self.body = Some(serde_json::Value::String(body));
+  }
+
   pub fn status(&mut self, status: u16) {
     self.status = Some(StatusCode::from_u16(status).unwrap());
   }
@@ -116,6 +124,12 @@ impl AxumResponse {
   #[napi]
   pub fn send_json(&mut self, body: serde_json::Value) -> &Self {
     self.inner.lock().unwrap().send_json(body);
+    self
+  }
+
+  #[napi]
+  pub fn send_text(&mut self, body: String) -> &Self {
+    self.inner.lock().unwrap().send_text(body);
     self
   }
 

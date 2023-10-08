@@ -15,6 +15,7 @@ export class AxumRequest {
 export class AxumResponseInternal { }
 export class AxumResponse {
   sendJson(body: any): this
+  sendText(body: string): this
   status(status: number): this
   setHeader(key: string, value: string): this
 }
