@@ -30,6 +30,15 @@
     "test:custom": "tsx --watch base.ts"
   },
   "packageManager": "yarn@3.6.4",
-  "repository": "https://github.com/daniel-boll/axum-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-boll/axum-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daniel-boll/axum-js/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "A Axum http wrapper for NodeJS"
 }
