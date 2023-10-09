@@ -10,7 +10,6 @@ use axum::{
 use hyper::StatusCode;
 use napi::bindgen_prelude::Result;
 
-#[napi]
 pub struct AxumResponseInternal {
   status: Option<StatusCode>,
   headers: Option<hyper::HeaderMap>,
@@ -23,7 +22,6 @@ pub struct AxumResponse {
   inner: Arc<Mutex<AxumResponseInternal>>,
 }
 
-#[napi]
 impl AxumResponseInternal {
   pub fn new() -> Self {
     Self {

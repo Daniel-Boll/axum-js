@@ -19,6 +19,7 @@ impl AxumRequest {
   }
 
   #[napi(ts_return_type = "Record<string, any>")]
+  #[napi(getter)]
   pub fn body(&mut self) -> serde_json::Value {
     match &self.body {
       Some(bytes) => match serde_json::from_slice(bytes.as_ref()) {
