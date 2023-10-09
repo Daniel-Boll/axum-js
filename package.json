@@ -1,6 +1,6 @@
 {
   "name": "@lambda-group/axum-js",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
@@ -30,10 +30,7 @@
     "test:custom": "tsx --watch base.ts"
   },
   "packageManager": "yarn@3.6.4",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/daniel-boll/axum-js.git"
-  },
+  "repository": "https://github.com/Daniel-Boll/axum-js",
   "bugs": {
     "url": "https://github.com/daniel-boll/axum-js/issues"
   },

@@ -16,7 +16,7 @@
   "engines": {
     "node": ">= 10"
   },
-  "repository": "daniel-boll/axum-js",
+  "repository": "https://github.com/Daniel-Boll/axum-js",
   "libc": [
     "glibc"
   ]
