@@ -1,0 +1,20 @@
+{
+  "name": "@lambda-group/axum-js-darwin-x64",
+  "version": "0.0.1",
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "axum-js.darwin-x64.node",
+  "files": [
+    "axum-js.darwin-x64.node"
+  ],
+  "description": "A Axum http wrapper for NodeJS",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "repository": "https://github.com/Daniel-Boll/axum-js"
+}
