@@ -37,10 +37,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "description": "A Axum http wrapper for NodeJS",
-  "optionalDependencies": {
-    "@lambda-group/axum-js-win32-x64-msvc": "0.0.8",
-    "@lambda-group/axum-js-darwin-x64": "0.0.8",
-    "@lambda-group/axum-js-linux-x64-gnu": "0.0.8"
-  }
+  "description": "A Axum http wrapper for NodeJS"
 }
