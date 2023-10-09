@@ -1,0 +1,12 @@
+name: Dependency Resolution
+
+on:
+  issues:
+    types: [deleted, closed]
+
+jobs:
+  blocking_issues:
+    runs-on: ubuntu-latest
+    name: Checks for Dependent Issues
+    steps:
+      - uses: thesloppyguy/DependencyTracker@v1
