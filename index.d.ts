@@ -7,12 +7,18 @@ export function axumVersion(): string
 export class AxumApp {
   constructor()
   get(path: string, cb: (request: AxumRequest, response: AxumResponse) => void): void
-  listen(port: number): Promise<void>
+  post(path: string, cb: (request: AxumRequest, response: AxumResponse) => void): void
+  patch(path: string, cb: (request: AxumRequest, response: AxumResponse) => void): void
+  delete(path: string, cb: (request: AxumRequest, response: AxumResponse) => void): void
+  put(path: string, cb: (request: AxumRequest, response: AxumResponse) => void): void
+  options(path: string, cb: (request: AxumRequest, response: AxumResponse) => void): void
+  head(path: string, cb: (request: AxumRequest, response: AxumResponse) => void): void
+  trace(path: string, cb: (request: AxumRequest, response: AxumResponse) => void): void
+  listen(port: number, cb: (value: undefined) => any): Promise<void>
 }
 export class AxumRequest {
-  body(): Record<string, any>
+  get body(): Record<string, any>
 }
-export class AxumResponseInternal { }
 export class AxumResponse {
   sendJson(body: any): this
   sendText(body: string): this

@@ -252,10 +252,9 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { AxumApp, AxumRequest, AxumResponseInternal, AxumResponse, axumVersion } = nativeBinding
+const { AxumApp, AxumRequest, AxumResponse, axumVersion } = nativeBinding
 
 module.exports.AxumApp = AxumApp
 module.exports.AxumRequest = AxumRequest
-module.exports.AxumResponseInternal = AxumResponseInternal
 module.exports.AxumResponse = AxumResponse
 module.exports.axumVersion = axumVersion
