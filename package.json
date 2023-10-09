@@ -1,6 +1,6 @@
 {
   "name": "@lambda-group/axum-js",
-  "version": "0.0.10",
+  "version": "0.0.0",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
@@ -30,12 +30,23 @@
     "test:custom": "tsx --watch base.ts"
   },
   "packageManager": "yarn@3.6.4",
-  "repository": "git@github.com/daniel-boll/axum-js.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/daniel-boll/axum-js.git"
+  },
   "bugs": {
     "url": "https://github.com/daniel-boll/axum-js/issues"
   },
   "publishConfig": {
     "access": "public"
   },
-  "description": "A Axum http wrapper for NodeJS"
+  "description": "A Axum http wrapper for NodeJS",
+  "homepage": "https://github.com/daniel-boll/axum-js#readme",
+  "keywords": [
+    "axum",
+    "native-module",
+    "rust",
+    "http-server"
+  ],
+  "author": "Daniel Boll <danielboll.dev@proton.me>"
 }
